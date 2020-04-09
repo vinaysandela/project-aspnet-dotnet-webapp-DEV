@@ -18,7 +18,7 @@ jobs:
     - name: docker build
       run:  
         #docker build ./SampleWebApplication -t samplegroupacr.azurecr.io/samplewebapplication:1.0.0
-        docker build  ./ -t samplegroupacr.azurecr.io/samplewebapplication:1.0.0
+        docker build  ./SampleWebApplication -t samplegroupacr.azurecr.io/samplewebapplication:1.0.0
         #docker build -t samplegroupacr.azurecr.io/samplewebapplication .
     - name: docker push
       run: 
